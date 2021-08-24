@@ -1,4 +1,5 @@
-# This is a fork from Andre_Schuikis project  https://github.com/Andre-Schuiki/esphome_im350
+# This is a fork from Andre_Schuikis project 
+ https://github.com/Andre-Schuiki/esphome_im350
 - removed a lot unnecassary stuff (eg. NTP support)
 - add data upload to MQTT broker
 
