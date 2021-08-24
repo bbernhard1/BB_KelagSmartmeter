@@ -1,3 +1,10 @@
+# This is a fork from Andre_Schuikis project  https://github.com/Andre-Schuiki/esphome_im350
+- removed a lot unnecassary stuff (eg. NTP support)
+- add data upload to MQTT broker
+
+-------
+Original readme
+
 # esphome_im350
 Custom Component for ESP Home to support the IM350 (Smart Meter from a local provider in Austria/Carinthia.)
 
