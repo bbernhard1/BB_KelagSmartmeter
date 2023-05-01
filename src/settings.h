@@ -7,10 +7,14 @@ int led_builtin = 2;
 // Wifi Settings
 String hostname = "ESP_Smartmeter";
 
-// MQTT Settings
-const char* MQTTBroker = "10.0.0.1"; //IPS Server
-const int MQTTPort = 1883;  // IPS MQTT Port
+IPAddress ip(10, 0, 0, 121);            // my IP Adress  
+IPAddress dns(10, 0, 0, 138);           // DNS  
+IPAddress gateway(10, 0, 0, 138);       // Gateway  
+IPAddress subnet(255, 255, 255, 0);     // Netmask  
 
+// MQTT Settings
+const char* MQTTBroker = "10.0.0.1";    // MQTT Server
+const int MQTTPort = 1883;              // MQTT Port
 
 // Smartmeter Protocoll
 const byte start_byte = 0x7E; 

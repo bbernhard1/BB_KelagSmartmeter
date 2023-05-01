@@ -267,6 +267,7 @@ void setup()
   Serial.printf("Connecting to %s ", wifi_ssid);
   WiFi.mode(WIFI_STA);
   WiFi.setHostname(hostname.c_str());    //define hostname
+  WiFi.config(ip,dns,gateway,subnet);    // skip for DynIP
   WiFi.begin(wifi_ssid, wifi_password);
   while (WiFi.waitForConnectResult() != WL_CONNECTED)
   {
